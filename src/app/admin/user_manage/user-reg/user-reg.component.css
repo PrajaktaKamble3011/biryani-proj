@@ -1,0 +1,16 @@
+.jumbotron{
+    text-align: center;
+    background-image: url('../../../../assets/webBG.jpg');
+}
+label{
+    color:cyan;
+    font-size:20px;
+    width:200px;
+    text-align: left;
+}
+h2{
+    color:cornsilk;
+}
+textarea{
+    width:180px;
+}

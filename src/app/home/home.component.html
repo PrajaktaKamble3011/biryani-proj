@@ -1,0 +1,158 @@
+<header>
+  <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+    <img src="../../assets/logo.jpg" class="logo">
+    <h5 class="my-0 mr-md-auto font-weight-normal">Biryani Galli</h5>
+    <nav class="my-2 my-md-0 mr-md-3">
+      <a class="p-2 text-dark" href="/">Home</a>
+      <div class="drop">
+        <a class="drop_btn" style="color:black">Register</a>
+        <ul class="drop-content">
+          <li><a href="/regu">As user</a></li>
+        </ul>
+      </div>
+      <a class="p-2 text-dark" href="/about">About</a>
+    </nav>
+    <div class="drop">
+      <a class="drop_btn" style="color:black">Sign up</a>
+      <ul class="drop-content">
+        <li><a href="/loginuser">As user</a></li>
+        <li><a href="/loginadmin">As admin</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+<main>
+  <div id="slider" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#slider" data-slide-to="0" class="active"></li>
+      <li data-target="#slider" data-slide-to="1"></li>
+      <li data-target="#slider" data-slide-to="2"></li>
+    </ul>
+
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active" height=500px>
+        <img src="../../assets/slider_1.jpg" alt="Lollipop" class="slider-img">
+        <div class="carousel-caption">
+          <h3 style="font-family: matura mt script capitals; font-size: 500%;">Lollipop</h3>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../../assets/slider_2.jpg" alt="Handi biryani" class="slider-img">
+        <div class="carousel-caption">
+          <h3 style="font-family: matura mt script capitals; font-size: 500%;">Haandi Biryani</h3>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../../assets/slider_3.jpg" alt="Biryani" class="slider-img">
+        <div class="carousel-caption">
+          <h3 style="font-family: matura mt script capitals; font-size: 500%;">Biryani</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#slider" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#slider" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+  <br><br>
+
+  <div class="row">
+    <div class="card h-100" *ngFor="let p of product">
+      <div class="column" *ngIf="p.prod_type=='Tandoori starter'">
+        <img src="{{p.prod_img}}" style="width:250px;height:250px">
+        <h3>{{p.prod_name}}</h3>
+        <p class="price">Rs.{{p.prod_price}}</p>
+        <p>{{p.prod_desc}}</p>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+
+  <br><hr><br>
+
+  <div class="row">
+    <div class="card h-100" *ngFor="let p of product" >
+      <div class="column" *ngIf="p.prod_type=='Biryani'" style="float: left;">
+        <img src="{{p.prod_img}}" style="width:250px;height:250px">
+        <h3>{{p.prod_name}}</h3>
+        <p class="price">Rs.{{p.prod_price}}</p>
+        <p>{{p.prod_desc}}</p>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+
+<br><hr><br>
+
+<div class="row">
+  <div class="card h-100" *ngFor="let p of product">
+    <div class="column" *ngIf="p.prod_type=='Handi biryani'">
+      <img src="{{p.prod_img}}" style="width:250px;height:250px">
+      <h3>{{p.prod_name}}</h3>
+      <p class="price">Rs.{{p.prod_price}}</p>
+      <p>{{p.prod_desc}}</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+  </div>
+</div>
+  
+  <!--<ul *ngFor= "let p of product">
+      <li *ngIf="p.prod_type=='Tandoori starter'">
+        {{p.prod_name}}
+      </li>
+      </ul> -->
+  <!--<div class="mt-lg-4" style="text-align: center;">
+        <button type="button" class="btn btn-warning" style="padding-left: 20px; padding-right: 20px;" name="cat" onclick="category()"><a>Tandoori </a>Tandoori Starters</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="btn btn-warning" style="padding-left: 20px; padding-right: 20px;">Non-veg Starters</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="button" class="btn btn-warning" style="padding-left: 20px; padding-right: 20px;" onclick="">Biryani</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="button" class="btn btn-warning" style="padding-left: 20px; padding-right: 20px;" onclick="">Handi Biryani</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="button" class="btn btn-warning" style="padding-left: 20px; padding-right: 20px;" onclick="">Drinks</button>
+          </div>-->
+  <br><br>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <h6>About</h6>
+        <p class="text-justify">In a world where "authentic biryani" is used more as a phrase rather than served as a
+          dish, we at Biryani Galli have made it our goal to serve truly authentic, Biryani to those who know the taste
+          that goes with that promise.</p>
+      </div>
+
+      <div class="col-xs-6 col-md-3">
+        <h6>Address</h6>
+        <p class="text-justify">21, First Floor, Padmini Arcade Complex, Rambaug Colony Pune-411027</p>
+      </div>
+
+      <div class="col-xs-6 col-md-3">
+        <h6>Quick Links</h6>
+        <ul class="footer-links">
+          <li><a href="/about">About Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-6 col-xs-12">
+        <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by
+          <a href="#">Biryani Galli</a>.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</footer>

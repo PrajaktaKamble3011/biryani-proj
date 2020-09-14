@@ -1,0 +1,38 @@
+.logo{
+    height:40px;
+    width:80px
+}
+
+.drop_btn{
+    padding:16px;
+    font-size:16px;
+}
+.drop{
+    position:relative;
+    display:inline-block
+}
+.drop-content{
+    display:none;
+    min-width:150px;
+    position:absolute;
+    padding:0px 0px;
+    z-index:1
+}
+.drop-content li{
+    display:block;
+    font-size:20px;
+    padding:0px 10px;
+}
+.drop:hover .drop-content{
+    display:block
+}
+.jumbotron{
+    background-image:url('../../assets/webBG.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+p{
+    color:cyan
+}

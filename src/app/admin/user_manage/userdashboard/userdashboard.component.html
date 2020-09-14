@@ -1,0 +1,32 @@
+<div class='jumbotron'>
+    <h2 style="text-align: center; color:cyan">User data</h2>
+    <br><br><br>
+    <table class="table table-bordered table-striped table-hover">
+    <thead>
+        <tr> 
+            <th style="text-align: center;background-color: gray;color:white" colspan="6"> User Details </th>
+        </tr>
+        <tr style="background-color: indianred;color:indigo">
+            <th> User Name </th>
+            <th> User Password </th>
+            <th> User Address </th>
+            <th> User mobile </th>
+            <th> Update Product </th>
+            <th> Delete Product </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let u of user">
+            <td>{{u.user_name}}</td>
+            <td>{{u.user_password}}</td>
+            <td>{{u.user_addrs}}</td>
+            <td>{{u.user_mobile}}</td>
+            <td><a class="btn btn-info" [routerLink]="['/updateu',u.id]">Edit user</a></td>
+            <td><a class="btn btn-danger" (click)="delete(u.id)">Delete user</a></td>
+        </tr>
+    </tbody>
+</table>
+<br><br>
+<button class="btn btn-primary" [routerLink]="['/admin']">Back</button>
+</div>
+

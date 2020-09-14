@@ -1,0 +1,56 @@
+<div class="jumbotron">
+    <h2>Edit data of product</h2>
+    <br><br><br>
+    <div *ngIf="form" class="table table-bordered text-danger">
+        <form [formGroup]="form" (ngSubmit)="update()">
+            <div>
+                <label>Product name:</label>
+                <input type="text" placeholder="write product name" formControlName="prod_name" required/>
+                <div class="alert alert-primary" *ngIf="form.get('prod_name').invalid && form.get('prod_name').touched">
+                    <div *ngIf="form.get('prod_name').errors.required">
+                        Please enter  product name
+                    </div> 
+                </div>
+            </div>
+            <div>
+                <label>Product image path:</label>
+                <input type="text" placeholder="write product image path" formControlName="prod_img" required/>
+                <div class="alert alert-primary" *ngIf="form.get('prod_img').invalid && form.get('prod_img').touched">
+                    <div *ngIf="form.get('prod_img').errors.required">
+                        Please enter product image path
+                    </div>
+                </div>
+            </div>
+            <div>
+                <label>Product category:</label>
+                <select formControlName="prod_type" required>
+                    <option *ngFor="let p of prod_category" [value]="p">
+                        {{p}}
+                    </option>
+                </select>
+            </div>
+            <div>
+                <label>Product description:</label>
+                <input type="text" placeholder="write product description" formControlName="prod_desc" required/>
+                <div class="alert alert-primary" *ngIf="form.get('prod_desc').invalid && form.get('prod_desc').touched">
+                    <div *ngIf="form.get('prod_desc').errors.required">
+                        Please enter product description
+                    </div>
+                </div>
+            </div>
+            <div>
+                <label>Product price:</label>
+                <input type="number" placeholder="write product price" formControlName="prod_price" required/>
+                <div class="alert alert-primary" *ngIf="form.get('prod_price').invalid && form.get('prod_price').touched">
+                    Please enter product price
+                </div>
+            </div>
+            <div>
+                <button type="submit">Save</button>&nbsp;&nbsp;&nbsp;
+                <button type="reset">Clear</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+

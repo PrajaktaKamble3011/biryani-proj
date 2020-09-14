@@ -1,0 +1,13 @@
+div{
+    background-image:url('../../../../assets/webBG.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+td{
+    color:white;
+    font-size:20px;
+}
+th{
+    text-align: center;
+}

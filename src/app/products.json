@@ -1,0 +1,68 @@
+{
+  "products": [
+    {
+      "prod_name": "Chicken Tikka",
+      "prod_img": "../../assets/tandoori-starter/chicken-tikka.jpg",
+      "prod_desc": "A classic north Indian delight of boneless chicken pieced marinated and grilled over charcoal until juicy yet crisp, served with diced onions and tangy chutney",
+      "prod_price": 439,
+      "prod_type": "Tandoori starter",
+      "id": 1
+    },
+    {
+      "prod_name": "Tandoori Chicken",
+      "prod_img": "../../assets/tandoori-starter/tandoori-chicken.jpg",
+      "prod_desc": "Whole pieces of chicken marinaded in spices and grilled to perfection over charcoal till crisp on the outside, served with diced onions and tangy chutney.",
+      "prod_price": 439,
+      "prod_type": "Tandoori starter",
+      "id": 2
+    },
+    {
+      "prod_name": "Tangdi Kabab",
+      "prod_img": "../../assets/tandoori-starter/tangdi-kabab.jpg",
+      "prod_desc": "An assortment of charcoal grilled chicken legs with crispy skin and bags of flavour, served with diced onions and tangy chutney.",
+      "prod_price": 439,
+      "prod_type": "Tandoori starter",
+      "id": 3
+    },
+    {
+      "prod_name": "Egg Biryani",
+      "prod_img": "../../assets/biryani/egg-biryani.jpg",
+      "prod_desc": "Delicately spiced and boiled eggs immersed in wholesome aromatic long grained rice.",
+      "prod_price": 389,
+      "prod_type": "Biryani",
+      "id": 4
+    },
+    {
+      "prod_name": "Chicken Biryani",
+      "prod_img": "../../assets/biryani/chicken-biryani.jpg",
+      "prod_desc": "Biryani Galli’s signature Chicken Biryani with tastefully marinated and succulent pieces of chicken cooked in a rich mix of long grain rice and dry fruits, delicately flavoured with authentic herbs, spices and saffron.",
+      "prod_price": 419,
+      "prod_type": "Biryani",
+      "id": 5
+    },
+    {
+      "prod_name": "Mutton Biryani",
+      "prod_img": "../../assets/biryani/mutton-biryani.jpg",
+      "prod_desc": "Tenderly cooked pieces of mutton mixed with fragrant rice and tangy herbs to give you an absolutely spicy delight.",
+      "prod_price": 469,
+      "prod_type": "Biryani",
+      "id": 6
+    },
+    {
+      "prod_name": "Handi Dum Chicken Biryani",
+      "prod_img": "../../assets/handi-biryani/handi-chicken-biryani.jpg",
+      "prod_desc": "Biryani Galli’s signature Chicken Biryani with tastefully marinated and succulent pieces of chicken cooked in a rich mix of long grain rice and dry fruits, delicately flavoured with authentic herbs, spices and saffron cooked in earthern pot.",
+      "prod_price": 549,
+      "prod_type": "Handi biryani",
+      "id": 7
+    },
+    {
+      "prod_name": "Handi Dum Mutton Biryani",
+      "prod_img": "../../assets/handi-biryani/handi-mutton-biryani.jpg",
+      "prod_desc": "Tenderly cooked pieces of mutton mixed with fragrant rice and tangy herbs to give you an absolutely spicy delight cooked in earthern pot.",
+      "prod_price": 599,
+      "prod_type": "Handi biryani",
+      "id": 8
+    }
+  ]
+}

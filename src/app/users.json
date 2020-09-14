@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "user_name": "pooja",
+      "user_password": "pooja123",
+      "user_addrs": "Swargate,pune",
+      "user_mobile": 9876543456,
+      "id": 1
+    },
+    {
+      "user_name": "savita",
+      "user_password": "savita123",
+      "user_addrs": "Kondhwa,pune",
+      "user_mobile": 8765432187,
+      "id": 2
+    }
+  ]
+}
