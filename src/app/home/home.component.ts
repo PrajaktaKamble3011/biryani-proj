@@ -38,35 +38,8 @@ export class HomeComponent implements OnInit {
     }
     return this.temp;
   }
-  
-
-  /*getCategoryData(cat:string)
-  {
-    for(this.i=0;this.i<this.product.length;this.i++)
-    {
-      if(this.product[this.i].prod_type==this.cat)
-      {
-        this.temp[this.j++]=this.product[this.i]
-      }
-    }
-    return this.temp;
-  }*/
-
- /*category()
-  {
-    for(this.i=0;this.i<this.product.length;this.i++)
-    {
-      if(this.product[this.i].prod_type==this.option.value)
-      {
-        this.temp=this.product
-      }
-    }
-  }*/
-   
-  constructor(private productservice:ProductService) 
-  {
-    
-  }
+     
+  constructor(private productservice:ProductService) {}
 
   ngOnInit(): void {
     this.getProductData();
