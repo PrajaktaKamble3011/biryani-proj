@@ -27,6 +27,7 @@ export class HomeComponent implements OnInit {
 
   getCategoryData(event)
   {
+    console.log(event);
     console.log(event.target.id);
     this.cat=event.target.id;
     for(this.i=0;this.i<this.product.length;this.i++)

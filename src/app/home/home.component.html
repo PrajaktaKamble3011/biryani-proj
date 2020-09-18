@@ -61,26 +61,26 @@
     </a>
   </div>
   <br><br>
-
-      <div class="mt-lg-4" style="text-align: center;">
+  
+    <div class="mt-lg-4" style="text-align: center;">
           <button class="btn btn-warning" style="padding-left: 20px; padding-right: 20px;" id="Tandoori starter" (click)="getCategoryData($event)">Tandoori Starter</button>
           &nbsp;&nbsp;&nbsp;&nbsp;
           <button class="btn btn-warning" style="padding-left: 20px; padding-right: 20px;" id="Non-veg starter" (click)="getCategoryData($event)">Non-veg Starters</button>
           &nbsp;&nbsp;&nbsp;&nbsp;
           <button class="btn btn-warning" style="padding-left: 20px; padding-right: 20px;" id="Biryani" (click)="getCategoryData($event)">Biryani</button>
           &nbsp;&nbsp;&nbsp;&nbsp;
-            <button type="button" class="btn btn-warning" style="padding-left: 20px; padding-right: 20px;" id="Handi biryani" (click)="getCategoryData($event)">Handi Biryani</button>
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            <button type="button" class="btn btn-warning" style="padding-left: 20px; padding-right: 20px;" id="Drinks" (click)="getCategoryData($event)">Drinks</button>
+          <button class="btn btn-warning" style="padding-left: 20px; padding-right: 20px;" id="Handi biryani" (click)="getCategoryData($event)">Handi Biryani</button>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <button class="btn btn-warning" style="padding-left: 20px; padding-right: 20px;" id="Drinks" (click)="getCategoryData($event)">Drinks</button>
       </div>
       <br>
         <div class="row">
-          <div class="card h-100" *ngFor="let p of temp">
+          <div class="card h-100" *ngFor="let t of temp">
             <div class="column">
-              <img src="{{p.prod_img}}" style="width:250px;height:250px">
-              <h3>{{p.prod_name}}</h3>
-              <p class="price">Rs.{{p.prod_price}}</p>
-              <p>{{p.prod_desc}}</p>
+              <img src="{{t.prod_img}}" style="width:250px;height:250px">
+              <h3>{{t.prod_name}}</h3>
+              <p class="price">Rs.{{t.prod_price}}</p>
+              <p>{{t.prod_desc}}</p>
               <p><button>Add to Cart</button></p>
             </div>
           </div>
