@@ -63,6 +63,22 @@
       "prod_price": 599,
       "prod_type": "Handi biryani",
       "id": 8
+    },
+    {
+      "prod_name": "Egg Manchurian",
+      "prod_img": "../../assets/nonveg-starter/egg_manchurian.jpg",
+      "prod_desc": "Textured Manchurian balls made with tender eggs and cooked in a delicious and flavoursome oriental gravy.",
+      "prod_price": 349,
+      "prod_type": "Non-veg starter",
+      "id": 9
+    },
+    {
+      "prod_name": "Chicken 65",
+      "prod_img": "../../assets/nonveg-starter/chicken65.jpg",
+      "prod_desc": "Delicious and succulent chunks of chicken marinated in yoghurt and stir fried in a tangy mix of spices, chillies and the hero ingredient which binds it all together - curry leaves.",
+      "prod_price": 379,
+      "prod_type": "Non-veg starter",
+      "id": 10
     }
   ]
 }

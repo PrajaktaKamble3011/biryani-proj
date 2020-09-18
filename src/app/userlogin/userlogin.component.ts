@@ -35,8 +35,9 @@ export class UserloginComponent implements OnInit {
       {
         alert("User logged in successfully");
         this.router.navigateByUrl("user");
+        break;
       }
-      else if(this.userForm.value.username==this.user[this.i].user_name && this.userForm.value.pwd==this.user[this.i].user_password)
+      else if(this.userForm.value.username!=this.user[this.i].user_name && this.userForm.value.pwd!=this.user[this.i].user_password)
       {
         alert("please register yourself...or recheck username and password");
         this.router.navigateByUrl("regu"); 

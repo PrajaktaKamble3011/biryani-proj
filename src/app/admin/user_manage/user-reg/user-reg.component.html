@@ -5,7 +5,7 @@
         <form [formGroup]="form" (ngSubmit)="register()">
             <div>
                 <label>User name</label>:
-                <input type="text" placeholder="write user name" formControlName="user_name" required/>
+                <input type="text" placeholder="write user name" formControlName="user_name" id="user_name" name="user_name" required/>
                 <div class="alert alert-primary" *ngIf="form.get('user_name').invalid && form.get('user_name').touched">
                     <div *ngIf="form.get('user_name').errors.required">
                         Please enter  user name
@@ -14,7 +14,7 @@
             </div>
             <div>
                 <label>User password</label>:
-                <input type="text" placeholder="write user password" formControlName="user_password" required/>
+                <input type="text" placeholder="write user password" formControlName="user_password" id="user_password" name="user_password" required/>
                 <div class="alert alert-primary" *ngIf="form.get('user_password').invalid && form.get('user_password').touched">
                     <div *ngIf="form.get('user_password').errors.required">
                         Please enter user password
@@ -23,7 +23,7 @@
             </div>
             <div>
                 <label>User Address</label>:
-                <textarea placeholder="write user address" formControlName="user_addrs" required></textarea>
+                <textarea placeholder="write user address" formControlName="user_addrs" id="user_addrs" name="user_addrs" required></textarea>
                 <div class="alert alert-primary" *ngIf="form.get('user_addrs').invalid && form.get('user_addrs').touched">
                     <div *ngIf="form.get('user_addrs').errors.required">
                         Please enter user address
@@ -32,7 +32,7 @@
             </div>
             <div>
                 <label>User mobile number</label>:
-                <input type="number" placeholder="write user mobile number" formControlName="user_mobile" required/>
+                <input type="number" placeholder="write user mobile number" formControlName="user_mobile" id="user_mobile" name="user_mobile" required/>
                 <div class="alert alert-primary" *ngIf="form.get('user_mobile').invalid && form.get('user_mobile').touched">
                     Please enter user mobile number
                 </div>

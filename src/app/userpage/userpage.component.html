@@ -48,6 +48,32 @@
           <span class="carousel-control-next-icon"></span>
         </a>
       </div>
+
+      <div class="mt-lg-4" style="text-align: center;">
+        <button class="btn btn-warning" style="padding-left: 20px; padding-right: 20px;" id="Tandoori starter" (click)="getCategoryData($event)">Tandoori Starter</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="btn btn-warning" style="padding-left: 20px; padding-right: 20px;" id="Non-veg starter" (click)="getCategoryData($event)">Non-veg Starters</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="btn btn-warning" style="padding-left: 20px; padding-right: 20px;" id="Biryani" (click)="getCategoryData($event)">Biryani</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="btn btn-warning" style="padding-left: 20px; padding-right: 20px;" id="Handi biryani" (click)="getCategoryData($event)">Handi Biryani</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="btn btn-warning" style="padding-left: 20px; padding-right: 20px;" id="Drinks" (click)="getCategoryData($event)">Drinks</button>
+    </div>
+    <br>
+      <div class="row">
+        <div class="card h-100" *ngFor="let t of temp">
+          <div class="column">
+            <img src="{{t.prod_img}}" style="width:250px;height:250px">
+            <h3>{{t.prod_name}}</h3>
+            <p class="price">Rs.{{t.prod_price}}</p>
+            <p>{{t.prod_desc}}</p>
+            <p><button (click)="addProductToCart(t)">Add to Cart</button></p>
+          </div>
+        </div>
+      </div>
+<br><br>
+
 </main>
 <footer class="site-footer">
     <div class="container">
