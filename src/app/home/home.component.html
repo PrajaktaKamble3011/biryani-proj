@@ -137,11 +137,22 @@
             <button type="button" class="btn btn-warning" style="padding-left: 20px; padding-right: 20px;" id="Drinks" (click)="getCategoryData($event)">Drinks</button>
       </div>
       <br>
-      <ul *ngFor= "let t of temp">
+      <!-- <ul *ngFor= "let t of temp">
         <li>
           {{t.prod_name}}
         </li>
-        </ul>
+        </ul> -->
+        <div class="row">
+          <div class="card h-100" *ngFor="let p of temp">
+            <div class="column">
+              <img src="{{p.prod_img}}" style="width:250px;height:250px">
+              <h3>{{p.prod_name}}</h3>
+              <p class="price">Rs.{{p.prod_price}}</p>
+              <p>{{p.prod_desc}}</p>
+              <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+        </div>
   <br><br>
 </main>
 <footer class="site-footer">

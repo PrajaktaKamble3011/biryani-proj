@@ -70,11 +70,6 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.getProductData();
-
-    //this.getCategoryData(this.cat);
-    
-    //this.category();
-    
   }
 
 }
