@@ -25,9 +25,9 @@ export class HomeComponent implements OnInit {
     })
   }
 
-  getCategoryData(cat)
+  getCategoryData(event)
   {
-    console.log(cat);
+    console.log(event.target.id);
   }
   
 
