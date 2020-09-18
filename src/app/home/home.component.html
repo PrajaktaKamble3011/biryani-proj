@@ -81,7 +81,7 @@
               <h3>{{t.prod_name}}</h3>
               <p class="price">Rs.{{t.prod_price}}</p>
               <p>{{t.prod_desc}}</p>
-              <p><button>Add to Cart</button></p>
+              <p><button (click)="addProductToCart(t)">Add to Cart</button></p>
             </div>
           </div>
         </div>

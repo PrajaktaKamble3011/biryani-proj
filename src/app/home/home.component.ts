@@ -1,7 +1,9 @@
 import { NgModule,Component, OnInit } from '@angular/core';
 import { ProductService } from 'src/app/product.service';
 //import { FormGroup,FormControl} from '@angular/forms';
-import { Product } from 'src/app/admin/product_manage/product-reg/product'
+import { Product } from 'src/app/admin/product_manage/product-reg/product';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-home',
@@ -39,8 +41,14 @@ export class HomeComponent implements OnInit {
     }
     return this.temp;
   }
+
+  addProductToCart(Product : Product )
+  {
+    alert("First login yourself....");
+    this.router.navigateByUrl("loginuser");
+  }
      
-  constructor(private productservice:ProductService) {}
+  constructor(private productservice:ProductService,private router : Router) {}
 
   ngOnInit(): void {
     this.getProductData();
