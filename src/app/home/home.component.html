@@ -119,23 +119,29 @@
         {{p.prod_name}}
       </li>
       </ul> -->
-      <button class="btn btn-warning" id="Tandoori starter" (click)="getCategoryData($event)">Tandoori Starter</button>
+      <!-- <button class="btn btn-warning" id="Tandoori starter" (click)="getCategoryData($event)">Tandoori Starter</button> -->
      <!-- <ul *ngFor= "let t of temp" [value]="p">
         <li>
           {{t.prod_name}}
         </li>
         </ul>-->
-      <!--<div class="mt-lg-4" style="text-align: center;">
-            <button type="button" class="btn btn-warning" style="padding-left: 20px; padding-right: 20px;" name="cat" onclick="category()"><a>Tandoori </a>Tandoori Starters</button>
+      <div class="mt-lg-4" style="text-align: center;">
+            <button class="btn btn-warning" style="padding-left: 20px; padding-right: 20px;" id="Tandoori starter" (click)="getCategoryData($event)">Tandoori Starter</button>
             &nbsp;&nbsp;&nbsp;&nbsp;
-            <a class="btn btn-warning" style="padding-left: 20px; padding-right: 20px;">Non-veg Starters</a>
+            <button class="btn btn-warning" style="padding-left: 20px; padding-right: 20px;" id="Non-veg starter" (click)="getCategoryData($event)">Non-veg Starters</button>
             &nbsp;&nbsp;&nbsp;&nbsp;
-            <button type="button" class="btn btn-warning" style="padding-left: 20px; padding-right: 20px;" onclick="">Biryani</button>
+            <button class="btn btn-warning" style="padding-left: 20px; padding-right: 20px;" id="Biryani" (click)="getCategoryData($event)">Biryani</button>
             &nbsp;&nbsp;&nbsp;&nbsp;
-            <button type="button" class="btn btn-warning" style="padding-left: 20px; padding-right: 20px;" onclick="">Handi Biryani</button>
+            <button type="button" class="btn btn-warning" style="padding-left: 20px; padding-right: 20px;" id="Handi biryani" (click)="getCategoryData($event)">Handi Biryani</button>
             &nbsp;&nbsp;&nbsp;&nbsp;
-            <button type="button" class="btn btn-warning" style="padding-left: 20px; padding-right: 20px;" onclick="">Drinks</button>
-      </div>-->
+            <button type="button" class="btn btn-warning" style="padding-left: 20px; padding-right: 20px;" id="Drinks" (click)="getCategoryData($event)">Drinks</button>
+      </div>
+      <br>
+      <ul *ngFor= "let t of temp">
+        <li>
+          {{t.prod_name}}
+        </li>
+        </ul>
   <br><br>
 </main>
 <footer class="site-footer">
