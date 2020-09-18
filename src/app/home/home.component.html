@@ -23,7 +23,6 @@
 </header>
 <main>
   <div id="slider" class="carousel slide" data-ride="carousel">
-
     <!-- Indicators -->
     <ul class="carousel-indicators">
       <li data-target="#slider" data-slide-to="0" class="active"></li>
@@ -62,7 +61,8 @@
     </a>
   </div>
   <br><br>
-
+  <!--
+  <p style="font-size: 30px;"><b>Tandoori Starter</b></p>
   <div class="row">
     <div class="card h-100" *ngFor="let p of product">
       <div class="column" *ngIf="p.prod_type=='Tandoori starter'">
@@ -76,10 +76,10 @@
   </div>
 
   <br><hr><br>
-
+  <p style="font-size: 30px;"><b>Biryani</b></p>
   <div class="row">
     <div class="card h-100" *ngFor="let p of product" >
-      <div class="column" *ngIf="p.prod_type=='Biryani'" style="float: left;">
+      <div class="column" *ngIf="p.prod_type=='Biryani'">
         <img src="{{p.prod_img}}" style="width:250px;height:250px">
         <h3>{{p.prod_name}}</h3>
         <p class="price">Rs.{{p.prod_price}}</p>
@@ -87,10 +87,21 @@
         <p><button>Add to Cart</button></p>
       </div>
     </div>
-  </div>
+  </div>-->
+  <!--
+  <div class="card-deck" *ngFor="let p of product">
+    <div class="card" *ngIf="p.prod_type=='Biryani'">
+      <img class="card-img-top" src="{{p.prod_img}}" alt="Card image cap" style="width:250px;height:250px">
+      <div class="card-body">
+        <h5 class="card-title">{{p.prod_name}}</h5>
+        <p class="card-text">{{p.prod_desc}}</p>
+        <p class="card-text"><small class="text-muted">Rs.{{p.prod_price}}</small></p>
+      </div>
+    </div>
+    </div>
 
 <br><hr><br>
-
+<p style="font-size: 30px;"><b>Handi Biryani</b></p>
 <div class="row">
   <div class="card h-100" *ngFor="let p of product">
     <div class="column" *ngIf="p.prod_type=='Handi biryani'">
@@ -101,15 +112,21 @@
       <p><button>Add to Cart</button></p>
     </div>
   </div>
-</div>
+</div>-->
   
   <!--<ul *ngFor= "let p of product">
       <li *ngIf="p.prod_type=='Tandoori starter'">
         {{p.prod_name}}
       </li>
       </ul> -->
-  <!--<div class="mt-lg-4" style="text-align: center;">
-        <button type="button" class="btn btn-warning" style="padding-left: 20px; padding-right: 20px;" name="cat" onclick="category()"><a>Tandoori </a>Tandoori Starters</button>
+      <button class="btn btn-warning" id="Tandoori starter" (click)="getCategoryData(id)">Tandoori Starter</button>
+     <!-- <ul *ngFor= "let t of temp" [value]="p">
+        <li>
+          {{t.prod_name}}
+        </li>
+        </ul>-->
+      <!--<div class="mt-lg-4" style="text-align: center;">
+            <button type="button" class="btn btn-warning" style="padding-left: 20px; padding-right: 20px;" name="cat" onclick="category()"><a>Tandoori </a>Tandoori Starters</button>
             &nbsp;&nbsp;&nbsp;&nbsp;
             <a class="btn btn-warning" style="padding-left: 20px; padding-right: 20px;">Non-veg Starters</a>
             &nbsp;&nbsp;&nbsp;&nbsp;
@@ -118,7 +135,7 @@
             <button type="button" class="btn btn-warning" style="padding-left: 20px; padding-right: 20px;" onclick="">Handi Biryani</button>
             &nbsp;&nbsp;&nbsp;&nbsp;
             <button type="button" class="btn btn-warning" style="padding-left: 20px; padding-right: 20px;" onclick="">Drinks</button>
-          </div>-->
+      </div>-->
   <br><br>
 </main>
 <footer class="site-footer">

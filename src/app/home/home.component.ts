@@ -11,9 +11,12 @@ import { Product } from 'src/app/admin/product_manage/product-reg/product'
 export class HomeComponent implements OnInit {
 
   product:any=[];
-  temp:any=[];
+  temp:string[]=[];
+  cat:string;
+  
 
   i:number=0;
+  j:number=0;
 
   getProductData()
   {
@@ -21,6 +24,24 @@ export class HomeComponent implements OnInit {
       this.product=res
     })
   }
+
+  getCategoryData(cat)
+  {
+    console.log(cat);
+  }
+  
+
+  /*getCategoryData(cat:string)
+  {
+    for(this.i=0;this.i<this.product.length;this.i++)
+    {
+      if(this.product[this.i].prod_type==this.cat)
+      {
+        this.temp[this.j++]=this.product[this.i]
+      }
+    }
+    return this.temp;
+  }*/
 
  /*category()
   {
@@ -33,11 +54,18 @@ export class HomeComponent implements OnInit {
     }
   }*/
    
-  constructor(private productservice:ProductService) { }
+  constructor(private productservice:ProductService) 
+  {
+    
+  }
 
   ngOnInit(): void {
     this.getProductData();
+
+    //this.getCategoryData(this.cat);
+    
     //this.category();
+    
   }
 
 }

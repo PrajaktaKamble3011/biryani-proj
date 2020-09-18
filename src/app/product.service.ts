@@ -8,7 +8,8 @@ const api="http://localhost:4444/products/"
 })
 export class ProductService {
 
-  saveProduct(data){
+  saveProduct(data)
+  {
     return this.httpclient.post(api,data)
    }
 
@@ -20,6 +21,11 @@ export class ProductService {
    getProductById(id)
    {
      return this.httpclient.get(api+id)
+   }
+
+   getProductByCategory(prod_type)
+   {
+     return this.httpclient.get(api+prod_type)
    }
 
    updateProduct(id,data)
