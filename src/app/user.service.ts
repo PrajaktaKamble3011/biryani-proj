@@ -15,7 +15,7 @@ export class UserService {
 
    getUser()
    {
-     return this.httpclient.get(api)
+     return this.httpclient.get(api+'showuser.php');
    }
 
    getUserById(id)
