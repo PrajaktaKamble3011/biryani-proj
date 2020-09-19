@@ -61,6 +61,7 @@
         <button class="btn btn-warning" style="padding-left: 20px; padding-right: 20px;" id="Drinks" (click)="getCategoryData($event)">Drinks</button>
     </div>
     <br>
+    
       <div class="row">
         <div class="card h-100" *ngFor="let t of temp">
           <div class="column">
@@ -68,10 +69,14 @@
             <h3>{{t.prod_name}}</h3>
             <p class="price">Rs.{{t.prod_price}}</p>
             <p>{{t.prod_desc}}</p>
-            <p><button (click)="addProductToCart(t)">Add to Cart</button></p>
+            <p><button (click)="addToCart(t)">Add to Cart</button></p>
           </div>
-        </div>
+        </div>     
       </div>
+      <div class="col">
+        <app-cart></app-cart>
+      </div>
+
 <br><br>
 
 </main>
@@ -91,8 +96,7 @@
         <div class="col-xs-6 col-md-3">
           <h6>Quick Links</h6>
           <ul class="footer-links">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="about">About Us</a></li>
           </ul>
         </div>
       </div>
@@ -102,7 +106,7 @@
       <div class="row">
         <div class="col-md-8 col-sm-6 col-xs-12">
           <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
-       <a href="#">Biryani Galli</a>.
+       <a href="">Biryani Galli</a>.
           </p>
         </div>
 

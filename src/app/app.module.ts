@@ -19,6 +19,8 @@ import { UserdashboardComponent } from './admin/user_manage/userdashboard/userda
 import { UpdateuserComponent } from './admin/user_manage/updateuser/updateuser.component';
 import { AboutComponent } from './about/about.component';
 import { UserloginComponent } from './userlogin/userlogin.component';
+import { CartComponent } from './cart/cart.component';
+import { CartItemComponent } from './cart-item/cart-item.component';
 
 
 @NgModule({
@@ -36,6 +38,8 @@ import { UserloginComponent } from './userlogin/userlogin.component';
     UpdateuserComponent,
     AboutComponent,
     UserloginComponent,
+    CartComponent,
+    CartItemComponent,
   ],
   imports: [
     BrowserModule,

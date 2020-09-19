@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 import { ProductService } from 'src/app/product.service';
+import { ReplyService } from 'src/app/reply.service';
 import { Router } from '@angular/router';
 import { Product } from '../admin/product_manage/product-reg/product';
 
@@ -9,6 +10,8 @@ import { Product } from '../admin/product_manage/product-reg/product';
   styleUrls: ['./userpage.component.css']
 })
 export class UserpageComponent implements OnInit {
+
+  @Input() productItem:Product;
   
   product:any=[];
   temp:string[]=[];
@@ -40,12 +43,13 @@ export class UserpageComponent implements OnInit {
     return this.temp;
   }
 
-  addProductToCart(Product : Product )
+  addToCart(productItem)
   {
-    
+    this.reply.sendReply(this.productItem)
+    window.alert('your product has been added to cart');
   }
      
-  constructor(private productservice:ProductService,private router : Router) {}
+  constructor(private productservice:ProductService,private reply:ReplyService,private router : Router) {}
 
   ngOnInit(): void {
     this.getProductData();
